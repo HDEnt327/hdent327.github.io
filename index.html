@@ -1,145 +1,17 @@
-<html>
-    <head>
-        <meta http-equiv="Content-Language" content="zh-cn">
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-        <title>Zris.work</title>
-        <script language="JavaScript">
-            <!--
-            function FP_swapImg() {
-                //v1.0
-                var doc = document, args = arguments, elm, n;
-                doc.$imgSwaps = new Array();
-                for (n = 2; n < args.length; n += 2) {
-                    elm = FP_getObjectByID(args[n]);
-                    if (elm) {
-                        doc.$imgSwaps[doc.$imgSwaps.length] = elm;
-                        elm.$src = elm.src;
-                        elm.src = args[n + 1];
-                    }
-                }
-            }
-
-            function FP_preloadImgs() {
-                //v1.0
-                var d = document
-                  , a = arguments;
-                if (!d.FP_imgs)
-                    d.FP_imgs = new Array();
-                for (var i = 0; i < a.length; i++) {
-                    d.FP_imgs[i] = new Image;
-                    d.FP_imgs[i].src = a[i];
-                }
-            }
-
-            function FP_getObjectByID(id, o) {
-                //v1.0
-                var c, el, els, f, m, n;
-                if (!o)
-                    o = document;
-                if (o.getElementById)
-                    el = o.getElementById(id);
-                else if (o.layers)
-                    c = o.layers;
-                else if (o.all)
-                    el = o.all[id];
-                if (el)
-                    return el;
-                if (o.id == id || o.name == id)
-                    return o;
-                if (o.childNodes)
-                    c = o.childNodes;
-                if (c)
-                    for (n = 0; n < c.length; n++) {
-                        el = FP_getObjectByID(id, c[n]);
-                        if (el)
-                            return el;
-                    }
-                f = o.forms;
-                if (f)
-                    for (n = 0; n < f.length; n++) {
-                        els = f[n].elements;
-                        for (m = 0; m < els.length; m++) {
-                            el = FP_getObjectByID(id, els[n]);
-                            if (el)
-                                return el;
-                        }
-                    }
-                return null;
-            }
-            // -->
-        </script>
-    </head>
-    <body bgcolor="#CC9900" onload="FP_preloadImgs(/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button10.jpg',/*url*/'button11.jpg',/*url*/'button13.jpg',/*url*/'button14.jpg',/*url*/'button16.jpg',/*url*/'button17.jpg',/*url*/'button19.jpg',/*url*/'button1A.jpg',/*url*/'button1C.jpg',/*url*/'button1D.jpg',/*url*/'button21.jpg',/*url*/'button20.jpg')">
-        <p>
-            <marquee scrolldelay="10" style="font-family: 楷体; font-size: 36pt; text-decoration: blink; color: #FF00FF" width="1141">欢迎来到HDE的烘焙机！ Welcome to HDE's homepage！</marquee>
-        </p>
-        <p>
-            <a href="https://github.com/HDEnt327">
-                <img border="0" id="img1" src="button6.jpg" height="30" width="150" alt="关于我" fp-style="fp-btn: Glass Capsule 3; fp-font: SimSun-ExtB; fp-font-size: 9; fp-font-color-hover: #C0C0C0; fp-font-color-press: #FF0000" fp-title="关于我" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button7.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button6.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button8.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button7.jpg')">
-            </a>
-            <a href="http://zris.work/contact.htm">
-                <img border="0" id="img7" src="button1F.jpg" height="30" width="150" alt="联系我 Contact Me" fp-style="fp-btn: Metal Rectangle 7; fp-font: SimSun-ExtB; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF; fp-orig: 0" fp-title="联系我 Contact Me" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button20.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button1F.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button21.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button20.jpg')">
-            </a>
-        </p>
-        <p>
-            <a href="https://weibo.com/zris">
-                <img border="0" id="img2" src="buttonF.jpg" height="49" width="150" alt="我的微博" fp-style="fp-btn: Glass Tab 1; fp-font: SimSun-ExtB; fp-font-color-hover: #FF00FF; fp-font-color-press: #FFFF00" fp-title="我的微博" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button10.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'buttonF.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button11.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button10.jpg')">
-            </a>
-            <a href="https://space.bilibili.com/454493277">
-                <img border="0" id="img3" src="button12.jpg" height="30" width="150" alt="我的bilibili" fp-style="fp-btn: Jewel 2; fp-font: SimSun-ExtB; fp-font-color-hover: #00FFFF; fp-font-color-press: #FF00FF" fp-title="我的bilibili" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button13.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button12.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button14.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button13.jpg')">
-            </a>
-            <a href="https://music.163.com/#/artist?id=979073">
-                <img border="0" id="img4" src="button15.jpg" height="30" width="150" alt="我的网易云" fp-style="fp-btn: Metal Capsule 4; fp-font: SimSun-ExtB; fp-font-color-hover: #808000; fp-font-color-press: #00FF00" fp-title="我的网易云" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button16.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button15.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button17.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button16.jpg')">
-            </a>
-        </p>
-        <p>
-            <a href="https://twitter.com/Zrisound">
-                <img border="0" id="img5" src="button18.jpg" height="30" width="150" alt="My Twitter" fp-style="fp-btn: Soft Capsule 2; fp-font: SimSun-ExtB; fp-font-color-hover: #FF00FF; fp-font-color-press: #00FF00" fp-title="My Twitter" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button19.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button18.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button1A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button19.jpg')">
-            </a>
-            <a href="https://soundcloud.com/zris">
-                <img border="0" id="img6" src="button1B.jpg" height="30" width="150" alt="My SoundCloud" fp-style="fp-btn: Corporate 8; fp-font: SimSun-ExtB" fp-title="My SoundCloud" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1C.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1B.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1D.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1C.jpg')">
-            </a>
-        </p>
-        <script>
-            (function() {
-                var js = "window['__CF$cv$params']={r:'7c1fd9a89eba107b',m:'c9lJd6S8RZ07MlkO3YXhQLV4fKLOIh6CKqZYjyNhekU-1683193939-0-ARi1EpJzL4wDw39WHM/CWVlhW7rEXbQxp/VORCo4kbXw',u:'/cdn-cgi/challenge-platform/h/g'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
-                var _0xh = document.createElement('iframe');
-                _0xh.height = 1;
-                _0xh.width = 1;
-                _0xh.style.position = 'absolute';
-                _0xh.style.top = 0;
-                _0xh.style.left = 0;
-                _0xh.style.border = 'none';
-                _0xh.style.visibility = 'hidden';
-                document.body.appendChild(_0xh);
-                function handler() {
-                    var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
-                    if (_0xi) {
-                        var _0xj = _0xi.createElement('script');
-                        _0xj.nonce = '';
-                        _0xj.innerHTML = js;
-                        _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
-                    }
-                }
-                if (document.readyState !== 'loading') {
-                    handler();
-                } else if (window.addEventListener) {
-                    document.addEventListener('DOMContentLoaded', handler);
-                } else {
-                    var prev = document.onreadystatechange || function() {}
-                    ;
-                    document.onreadystatechange = function(e) {
-                        prev(e);
-                        if (document.readyState !== 'loading') {
-                            document.onreadystatechange = prev;
-                            handler();
-                        }
-                    }
-                    ;
-                }
-            }
-            )();
-        </script>
-        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c1fd9a89eba107b","version":"2023.4.0","r":1,"b":1,"token":"c5cbc22ec3994fe6a710e02ce295c616","si":100}' crossorigin="anonymous"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HDE的烘培机</title>
+</head>
+<body>
+    <div class="bgwrapper">
+        <div class="title">
+            <p>Welcome to HDE's Homepage</p>
+        </div>
+    </div>
+</body>
 </html>
